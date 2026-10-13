@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      .hero__visual {
+        overflow: hidden;
+      }
+      .hero__visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <title>Document</title>
+    <!--css-->
+    <link rel="stylesheet" href="/src/style.css">
+    <!--Googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- include -->
+    <div id="header"></div>
+    <div class="header__name__sp">
+      <p>KOAKUTSU NATSUMI</p>
+    </div>
+    <main class="main">
+
+      <section class="hero" id="top">
+
+        <!-- =========================
+        左：作品画像
+        ========================== -->
+        <!-- sidebarの背後になる領域 -->
+        <div class="hero__sidebar-space"></div>
+        <div class="hero__visual">
+          <div class="hero__slide is-active">
+            <img src="/img-top-triasta.png" alt="株式会社トリアスタ様">
+          </div>
+
+          <div class="hero__slide">
+            <img src="/img-top-beauty.png" alt="医療美容案件">
+          </div>
+
+          <div class="hero__slide">
+            <img src="/img-top-parette.png" alt="発達支援ラボぱれっと">
+          </div>
+
+          <div class="hero__slide">
+            <img src="/img-top-lip.png" alt="AddictRouge">
+          </div>
+
+          <div class="hero__slide">
+            <img src="/img-top-food.png" alt="ビュッフェ食べ放題のバナー">
+          </div>
+        </div>
+
+        <!-- =========================
+        右
+        ========================== -->
+        <div class="hero__content">
+          <!-- DESIGN -->
+          <div class="hero__marquee">
+            <div class="hero__marquee-track">
+              <div class="hero__marquee-item">
+                <img src="/vector-design.svg" alt="">
+              </div>
+
+              <div class="hero__marquee-item">
+                <img src="/vector-design.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- 案件名 -->
+          <div class="hero__projects">
+            <div class="hero__project is-active">
+              <span class="hero__line"></span>
+              <p class="hero__client">株式会社トリアスタ様</p>
+            </div>
+            <div class="hero__project">
+              <span class="hero__line"></span>
+              <p class="hero__client">医療美容のバナー</p>
+            </div>
+            <div class="hero__project">
+              <span class="hero__line"></span>
+              <p class="hero__client">発達支援ラボぱれっと様</p>
+            </div>
+            <div class="hero__project">
+              <span class="hero__line"></span>
+              <p class="hero__client en">Addict Rouge</p>
+            </div>
+            <div class="hero__project">
+              <span class="hero__line"></span>
+              <p class="hero__client">Curina Buffet</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="works-section__inner__wrapper">
+
+        <!-- =========================
+        WEB
+        ========================== -->
+
+        <section class="works-section" id="web">
+          <div class="works-section__inner">
+            <div class="works-section__heading">
+              <h2 class="works-section__title">WEB</h2>
+              <span class="works-section__line"></span>
+            </div>
+            <div class="works-grid">
+              <!--作品一覧-->
+              <article class="work-card">
+                <div class="work-card__image  js-page-popup work-card__link" data-page="lower/web_twilight.html">
+                  <img src="/img-web-twilight-raund.png" alt="AIタロット占いアプリ Twilight">
+                  <div class="work-card__body">
+                    <p class="work-card__description">
+                      AIタロット占いアプリ"Twilight"
+                    </p>
+                    <span class="work-card__category">
+                      WEB DESIGN
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image  js-page-popup work-card__link" data-page="lower/web_astrowrite.html">
+                  <img src="/img-web-astrowrite-raund.png" alt="ASTROWRITE">
+                  <div class="work-card__body">
+                    <p class="work-card__description">
+                      12星座占いライティング・エージェント"ASTROWRITE"
+                    </p>
+                    <span class="work-card__category">
+                      WEB DESIGN
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image js-page-popup work-card__link" data-page="lower/web_tane.html">
+                  <img src="/img-web-tane-raund.png" alt="架空の児童発達支援事業所たね">
+                  <div class="work-card__body">
+                    <p class="work-card__description">
+                      児童発達支援事業所たね
+                    </p>
+                    <span class="work-card__category">
+                      WEB DESIGN
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image  js-page-popup work-card__link" data-page="lower/web_portfolio.html">
+                  <img src="/img-web-portfolio-raund.png" alt="ASTROWRITE">
+                  <div class="work-card__body">
+                    <p class="work-card__description">
+                      自身のポートフォリオサイト
+                    </p>
+                    <span class="work-card__category">
+                      WEB DESIGN
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section><!-- WEB -->
+
+        <!-- =========================
+        LOGO
+        ========================== -->
+
+        <section class="works-category" id="logo">
+          <div class="works-section__inner">
+            <div class="works-section__heading">
+              <h2 class="works-section__title">LOGO</h2>
+              <span class="works-section__line"></span>
+            </div>
+            <div class="works-grid works-grid--logo">
+              <article class="work-card">
+                <div class="work-card__image work-card__image--logo js-page-popup work-card__link" data-page="lower/logo_triasta.html">
+                  <img src="/img-triasta-round.png" alt="TRIASTA ロゴデザイン">
+                </div>
+                <div class="work-card__body">
+                  <p class="work-card__description">
+                    株式会社TRIASTA様
+                  </p>
+                  <span class="work-card__category">
+                    LOGO DESIGN
+                  </span>
+                </div>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image work-card__image--logo js-page-popup work-card__link" data-page="lower/logo_rupina.html">
+                  <img src="/img-rupina-round.png" alt="株式会社RUPINA ロゴデザイン">
+                </div>
+                <div class="work-card__body">
+                  <p class="work-card__description">
+                    株式会社RUPINA様
+                  </p>
+                  <span class="work-card__category">
+                    LOGO DESIGN
+                  </span>
+                </div>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image work-card__image--logo js-page-popup work-card__link" data-page="lower/logo_parette.html">
+                  <img src="/img-parette-round.png" alt="発達支援ラボぱれっと ロゴデザイン">
+                </div>
+                <div class="work-card__body">
+                  <p class="work-card__description">
+                    発達支援ラボぱれっと様
+                  </p>
+                  <span class="work-card__category">
+                    LOGO DESIGN
+                  </span>
+                </div>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image work-card__image--logo js-page-popup work-card__link" data-page="lower/logo_musicadolce.html">
+                  <img src="/img-musicadolce-round.png" alt="音楽教室ムジカドルチェ ロゴデザイン">
+                </div>
+                <div class="work-card__body">
+                  <p class="work-card__description">
+                    音楽教室ムジカドルチェ様
+                  </p>
+                  <span class="work-card__category">
+                    LOGO DESIGN
+                  </span>
+                </div>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image work-card__image--logo js-page-popup work-card__link" data-page="lower/logo_akaran.html">
+                  <img src="/img-akaran-round.png" alt="株式会社Akaran ロゴデザイン">
+                </div>
+                <div class="work-card__body">
+                  <p class="work-card__description">
+                    株式会社Akaran様
+                  </p>
+                  <span class="work-card__category">
+                    LOGO DESIGN
+                  </span>
+                </div>
+              </article>
+            </div>
+          </section><!--LOGO-->
+
+          <!-- =========================
+          BANNER
+          ========================== -->
+
+          <section class="works-category" id="banner">
+            <div class="works-section__inner">
+              <div class="works-section__heading">
+                <h2 class="works-section__title">BANNER</h2>
+                <span class="works-section__line"></span>
+              </div>
+              <div class="works-grid works-grid--banner">
+                <article class="work-card">
+                  <div class="work-card__image work-card__image--banner js-page-popup work-card__link" data-page="lower/banner_01.html">
+                    <img src="/img-banner-01.png" alt="trend jacket style バナーデザイン">
+                  </div>
+                  <div class="work-card__body">
+                    <p class="work-card__description">
+                      アパレルブランドのバナー
+                    </p>
+                    <span class="work-card__category">
+                      BANNER DESIGN
+                    </span>
+                  </div>
+                </article>
+
+                <article class="work-card">
+                  <div class="work-card__image work-card__image--banner js-page-popup work-card__link" data-page="lower/banner_08.html">
+                    <img src="/img-banner-08.png" alt="食べ放題ビュッフェ バナーデザイン">
+                  </div>
+                  <div class="work-card__body">
+                    <p class="work-card__description">
+                      食べ放題ビュッフェのバナー
+                    </p>
+                    <span class="work-card__category">
+                      BANNER DESIGN
+                    </span>
+                  </div>
+                </article>
+
+                <article class="work-card work-card__aspect">
+                  <div class="work-card__image work-card__image--banner js-page-popup work-card__link work-card__image--aspect" data-page="lower/banner_10.html">
+                    <img src="/img-banner-10.png" alt="美容商品 バナーデザイン">
+                  </div>
+                  <div class="work-card__body">
+                    <p class="work-card__description">
+                      美容商品のバナー
+                    </p>
+                    <span class="work-card__category">
+                      BANNER DESIGN
+                    </span>
+                  </div>
+                </article>
+
+                <article class="work-card">
+                  <div class="work-card__image work-card__image--banner js-page-popup work-card__link" data-page="lower/banner_09.html">
+                    <img src="/img-banner-09.png" alt="学習塾 バナーデザイン">
+                  </div>
+                  <div class="work-card__body">
+                    <p class="work-card__description">
+                      学習塾のバナー
+                    </p>
+                    <span class="work-card__category">
+                      BANNER DESIGN
+                    </span>
+                  </div>
+                </a>
+              </article>
+
+              <article class="work-card">
+                <div class="work-card__image work-card__image--banner js-page-popup work-card__link" data-page="lower/banner_02.html">
+                  <img src="/img-banner-02.png" alt="summer collection バナーデザイン">
+                </div>
+                <div class="work-card__body">
+                  <p class="work-card__description">
+                    アパレルブランドのバナー
+                  </p>
+                  <span class="work-card__category">
+                    BANNER DESIGN
+                  </span>
+                </div>
+              </a>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__image work-card__image--banner js-page-popup work-card__link" data-page="lower/banner_04.html">
+                <img src="/img-banner-04.png" alt="cotton バナーデザイン">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__description">
+                  アパレルブランドのバナー
+                </p>
+                <span class="work-card__category">
+                  BANNER DESIGN
+                </span>
+              </div>
+            </article>
+
+            <article class="work-card work-card__aspect">
+              <div class="work-card__image work-card__image--banner js-page-popup work-card__link work-card__image--aspect" data-page="lower/banner_11.html">
+                <img src="/img-banner-11.png" alt="医療美容 バナーデザイン">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__description">
+                  医療美容のバナー
+                </p>
+                <span class="work-card__category">
+                  BANNER DESIGN
+                </span>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__image work-card__image--banner js-page-popup work-card__link" data-page="lower/banner_06.html">
+                <img src="/img-banner-06.png" alt="cotton バナーデザイン">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__description">
+                  アパレルブランドのバナー
+                </p>
+                <span class="work-card__category">
+                  BANNER DESIGN
+                </span>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__image work-card__image--banner js-page-popup work-card__link" data-page="lower/banner_07.html">
+                <img src="/img-banner-07.png" alt="outer collection バナーデザイン">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__description">
+                  アパレルブランドのバナー
+                </p>
+                <span class="work-card__category">
+                  BANNER DESIGN
+                </span>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__image work-card__image--banner js-page-popup work-card__link" data-page="lower/banner_12.html">
+                <img src="/img-banner-12.png" alt="化粧品 バナーデザイン">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__description">
+                  化粧品のバナー
+                </p>
+                <span class="work-card__category">
+                  BANNER DESIGN
+                </span>
+              </div>
+            </article>
+          </div>
+        </section><!--BANNER-->
+
+        <!-- =========================
+        MOVIE
+        ========================== -->
+
+        <section class="works-category" id="movie">
+          <div class="works-section__inner">
+            <div class="works-section__heading">
+              <h2 class="works-section__title">MOVIE</h2>
+              <span class="works-section__line"></span>
+            </div>
+            <div class="movie-grid">
+              <!-- astrowrite left -->
+              <article class="work-card">
+                <div class="work-card__image work-card__image--movie js-page-popup work-card__link" data-page="lower/movie_astrowrite.html">
+                  <video src="/movie_astrowrite_01.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <div class="work-card__body">
+                  <p class="work-card__description">
+                    12星座占いライティング・エージェント"ASTROWRITE"  
+                  </p>
+                  <span class="work-card__category">
+                    MOVIE
+                  </span>
+                </div>
+              </article>
+
+
+
+              <!-- astrowrite right -->
+              <article class="work-card">
+                <div class="work-card__image work-card__image--movie js-page-popup work-card__link" data-page="lower/banner_07.html">
+                  <video src="/movie_astrowrite_02.mp4" autoplay muted loop playsinline></video>
+                </div>
+              </article>
+
+
+
+              <!-- teilight -->
+              <article class="work-card movie-card--wide">
+                <div class="movie-showcase js-page-popup work-card__link" data-page="lower/movie_twilight.html">
+                  <div class="movie-showcase__item">
+                    <video src="/movie_twilight_01.mp4" autoplay muted loop playsinline></video>
+                  </div>
+
+                  <div class="movie-showcase__item">
+                    <video src="/movie_twilight_02.mp4" autoplay muted loop playsinline></video>
+                  </div>
+
+                  <div class="movie-showcase__item">
+                    <video src="/movie_twilight_03.mp4" autoplay muted loop playsinline></video>
+                  </div>
+                </div>
+                <div class="work-card__body">
+                  <p class="work-card__description">
+                    AIタロット占いアプリTwilight
+                  </p>
+                  <span class="work-card__category">
+                    MOVIE
+                  </span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section><!--MOVIE-->
+      </div><!-- works-section__inner__wrapper -->
+
+      <!-- =========================
+      ABOUT
+      ========================== -->
+
+      <section class="about-section" id="about">
+        <div class="about-section__inner">
+          <!-- ABOUT SVG -->
+          <div class="about-section__heading">
+            <img src="/about.svg" alt="ABOUT" class="about-section__title" >
+          </div>
+          <!-- Profile -->
+          <div class="about-profile">
+            <!-- 左側 -->
+            <div class="about-profile__left">
+              <div class="about-profile__person">
+                <img src="/natsumikoakutsu.png" alt="プロフィール写真" class="about-profile__image" >
+                <div class="about-profile__name">
+                  <p class="about-profile__name-en">KOAKUTSUNATSUMI</p>
+                  <p class="about-profile__name-ja">小圷 捺未</p>
+                </div>
+              </div>
+              <p class="about-profile__intro">栃木県生まれ。<br>趣味は観葉植物を育てること、<br>スマホカメラで写真を撮ること、<br>ラテアートの練習です。</p>
+            </div>
+            <!-- 右側 -->
+            <div class="about-profile__text">
+              <p>Webを中心としたデザイン制作を行っています。 現在はLPデザインやWebサイト、バナー、ロゴ制作を中心に、 簡単な動画制作やコーディングまで幅広く対応しています。 また、名刺やパンフレットなどのグラフィックデザインの制作経験もあります。</p>
+              <p>ブランドやサービスの想いを丁寧に汲み取り、 その魅力が伝わるビジュアルへ落とし込むことを大切にしています。 企業向けの信頼感のあるデザインから、 繊細でやわらかな雰囲気のデザインまで、 ブランドやサービスに合わせた表現をご提案します。</p>
+              <p>現在は、ロゴを起点にWebや各種クリエイティブへ 世界観を一貫して展開できるデザイナーを目指し、 ブランドデザインについても学びを深めています。</p>
+            </div>
+          </div>
+          <!-- Photo Gallery -->
+          <div class="photo-gallery">
+            <div class="photo-gallery__heading">
+              <p class="photo-gallery__title">My Photo gallery</p>
+              <span class="photo-gallery__line"></span>
+            </div>
+            <div class="photo-gallery__marquee">
+              <div class="photo-gallery__track">
+                <!-- 1セット目 -->
+                <div class="photo-gallery__group">
+                  <img src="/img_photo_01.png" alt="photo gallery">
+                  <img src="/img_photo_04.png" alt="photo gallery">
+                  <img src="/img_photo_02.png" alt="photo gallery">
+                  <img src="/img_photo_05.png" alt="photo gallery">
+                  <img src="/img_photo_06.png" alt="photo gallery">
+                </div>
+                <!-- 2セット目：ループ用 -->
+                <div class="photo-gallery__group" aria-hidden="true">
+                  <img src="/img_photo_01.png" alt="photo gallery">
+                  <img src="/img_photo_04.png" alt="photo gallery">
+                  <img src="/img_photo_02.png" alt="photo gallery">
+                  <img src="/img_photo_05.png" alt="photo gallery">
+                  <img src="/img_photo_06.png" alt="photo gallery">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+      CONTACT
+      ========================== -->
+
+      <section class="contact-section" id="contact">
+        <div class="contact-section__inner">
+          <!-- CONTACT SVG -->
+          <div class="contact-section__heading">
+            <img src="/contact.svg" alt="CONTACT" class="contact-section__title">
+          </div>
+          <!-- Contact Form -->
+          <form class="contact-form">
+            <div class="contact-form__group">
+              <label for="name" class="contact-form__label">
+                お名前または会社名
+                <span><p>\*</p></span>
+              </label>
+              <input type="text" id="name" name="name" class="contact-form__input" required>
+            </div>
+            <div class="contact-form__group">
+              <label for="email" class="contact-form__label">
+                メールアドレス
+                <span><p>\*</p></span>
+              </label>
+              <input type="email" id="email" name="email" class="contact-form__input" placeholder="メールアドレスを入力" required>
+            </div>
+            <div class="contact-form__group">
+              <label for="message" class="contact-form__label">
+                お問い合わせ内容
+                <span><p>\*</p></span>
+              </label>
+              <textarea id="message" name="message" class="contact-form__textarea" placeholder="例）新規店舗立ち上げに伴い、自社のロゴを作りたい" required></textarea>
+            </div>
+            <button type="submit" class="contact-form__button">送信する</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- include -->
+
+    <footer id="footer" ></footer>
+
+    <!-- ========================================
+    MOBILE MENU
+    ========================================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-menu__nav">
+        <a href="/index.html">TOP</a>
+        <a href="/web.html">WEB</a>
+        <a href="/logo.html">LOGO</a>
+        <a href="/banner.html">BANNER</a>
+        <a href="/movie.html">MOVIE</a>
+        <a href="/about.html">ABOUT</a>
+        <a href="/contact.html">CONTACT</a>
+      </nav>
+      <div class="mobile-menu__brand">
+        <img src="/vector_logo.svg" alt="" class="mobile-menu__logo" >
+        <div class="mobile-menu__name">
+          <p>KOAKUTSU<br>NATSUMI</p>
+          <span>Designer</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ハンバーガーボタン -->
+
+    <button class="mobile-menu-button" type="button">
+      <span class="mobile-menu-button__text">menu</span>
+    </button>
+    <div class="custom-cursor"></div>
+
+    <!-- ポップアップ表示 -->
+
+    <div class="page-popup" id="pagePopup">
+      <div class="page-popup__inner">
+        <iframe class="page-popup__iframe" id="pagePopupIframe" src="" title="作品詳細"></iframe>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script><!--typescriptを読み込むために必要-->
+  </body>
+</html>

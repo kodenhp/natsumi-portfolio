@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .hero__visual {
+    overflow: hidden;
+    }
+
+    .hero__visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+  </style>
+
+  <title>Document</title>
+
+  <!--css-->
+  <link rel="stylesheet" href="/src/style.css">
+
+  <!--Googlefonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- include -->
+  <div id="header"></div>
+
+    <div class="header__name__sp">
+    <p>KOAKUTSU NATSUMI</p>
+  </div>
+
+<section class="hero hero__lower-page" id="top">
+
+  <!-- sidebarの背後になる領域 -->
+  <div class="hero__sidebar-space hero__sidebar-space__lower-page"></div>
+
+  <!-- DESIGN -->
+  <div class="hero__marquee hero__marquee__lower-page">
+
+    <div class="hero__marquee-track hero__marquee-track__lower-page">
+
+      <div class="hero__marquee-item hero__marquee-item__lower-page">
+        <img src="/public/vector-movie.svg" alt="">
+      </div>
+
+      <div class="hero__marquee-item hero__marquee-item__lower-page">
+        <img src="/public/vector-movie.svg" alt="">
+      </div>
+
+      <div class="hero__marquee-item hero__marquee-item__lower-page">
+        <img src="/public/vector-movie.svg" alt="">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <section class="works-section" id="web">
+
+    <!-- =========================
+    MOVIE
+========================== -->
+<div class="works-category" id="movie">
+  <div class="works-section__inner">
+  <div class="works-section__heading">
+    <h2 class="works-section__title">MOVIE</h2>
+    <span class="works-section__line"></span>
+  </div>
+
+  <div class="movie-grid">
+
+    <!-- 上段 左 -->
+    <article class="work-card">
+      <a href="#" class="work-card__link">
+
+        <div class="work-card__image work-card__image--movie">
+            <video src="/movie_astrowrite_01.mp4" autoplay muted loop playsinline></video>
+        </div>
+
+        <div class="work-card__body work-card__body-pc">
+          <p class="work-card__description">
+            12星座占いライティングエージェントASTROWRITEの解説動画を作成しました。
+          </p>
+
+          <span class="work-card__category">
+            MOVIE
+          </span>
+        </div>
+
+      </a>
+    </article>
+
+
+    <!-- 上段 右 -->
+    <article class="work-card">
+      <a href="#" class="work-card__link">
+
+        <div class="work-card__image work-card__image--movie">
+            <video src="/movie_astrowrite_02.mp4" autoplay muted loop playsinline></video>
+        </div>
+
+        <div class="work-card__body work-card__body-sp work-card__body-sp">
+          <p class="work-card__description">
+            12星座占いライティングエージェントASTROWRITEの解説動画を作成しました。
+          </p>
+
+          <span class="work-card__category">
+            MOVIE
+          </span>
+        </div>
+
+      </a>
+    </article>
+
+
+    <!-- 下段 -->
+    <article class="work-card movie-card--wide">
+      <a href="#" class="work-card__link">
+
+        <div class="movie-showcase">
+
+          <div class="movie-showcase__item">
+              <video src="/movie_twilight_01.mp4" autoplay muted loop playsinline></video>
+          </div>
+
+          <div class="movie-showcase__item">
+              <video src="/movie_twilight_02.mp4" autoplay muted loop playsinline></video>
+          </div>
+
+          <div class="movie-showcase__item">
+              <video src="/movie_twilight_03.mp4" autoplay muted loop playsinline></video>
+          </div>
+
+        </div>
+
+        <div class="work-card__body">
+          <p class="work-card__description">
+            AIタロット占いアプリTwilightのWebサイト内のアプリ紹介動画・操作画面の動画を作成しました。
+          </p>
+
+          <span class="work-card__category">
+            MOVIE
+          </span>
+        </div>
+        
+      
+      </a>
+    </article>
+
+  </div>
+</div>
+</div><!--MOVIE-->
+</section>
+
+      <!-- include -->
+  <div id="footer"></div>
+
+  <!-- ========================================
+    MOBILE MENU
+========================================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+  <nav class="mobile-menu__nav">
+    <a href="/index.html">TOP</a>
+    <a href="/web.html">WEB</a>
+    <a href="/logo.html">LOGO</a>
+    <a href="/banner.html">BANNER</a>
+    <a href="/movie.html">MOVIE</a>
+    <a href="/about.html">ABOUT</a>
+    <a href="/contact.html">CONTACT</a>
+  </nav>
+
+  <div class="mobile-menu__brand">
+
+    <img
+      src="/vector_logo.svg"
+      alt=""
+      class="mobile-menu__logo"
+    >
+
+    <div class="mobile-menu__name">
+      <p>
+        KOAKUTSU<br>
+        NATSUMI
+      </p>
+
+      <span>Designer</span>
+    </div>
+
+  </div>
+
+</div>
+
+  <!-- ハンバーガーボタン -->
+<button class="mobile-menu-button" type="button">
+  <span class="mobile-menu-button__text">menu</span>
+</button>
+
+<div class="custom-cursor"></div>
+
+  <script type="module" src="/src/main.ts"></script><!--typescriptを読み込むために必要-->
+</body>
+
+</html>

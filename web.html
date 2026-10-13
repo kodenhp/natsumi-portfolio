@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .hero__visual {
+    overflow: hidden;
+    }
+
+    .hero__visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+  </style>
+
+  <title>Document</title>
+
+  <!--css-->
+  <link rel="stylesheet" href="/src/style.css">
+
+  <!--Googlefonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- include -->
+  <div id="header"></div>
+
+    <div class="header__name__sp">
+    <p>KOAKUTSU NATSUMI</p>
+  </div>
+
+<section class="hero hero__lower-page " id="top">
+
+  <!-- sidebarの背後になる領域 -->
+  <div class="hero__sidebar-space hero__sidebar-space__lower-page "></div>
+
+  <!-- DESIGN -->
+  <div class="hero__marquee hero__marquee__lower-page">
+
+    <div class="hero__marquee-track hero__marquee-track__lower-page">
+
+      <div class="hero__marquee-item hero__marquee-item__lower-page">
+        <img src="/public/web-design.svg" alt="">
+      </div>
+
+      <div class="hero__marquee-item hero__marquee-item__lower-page">
+        <img src="/public/web-design.svg" alt="">
+      </div>
+
+      <div class="hero__marquee-item hero__marquee-item__lower-page">
+        <img src="/public/web-design.svg" alt="">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  <!-- =========================
+      WEB
+  ========================== -->
+  <section class="works-section" id="web">
+
+    <div class="works-section__inner">
+
+      <div class="works-section__heading">
+        <h2 class="works-section__title">WEB</h2>
+        <span class="works-section__line"></span>
+      </div>
+      <div class="works-grid">
+
+        <!--作品一覧-->
+      <article class="work-card">
+        <a href="/public/lower/twilight.html" class="work-card__link">
+
+          <div class="work-card__image">
+            <img src="/img-web-twilight-raund.png" alt="AIタロット占いアプリ Twilight">
+          </div>
+
+          <div class="work-card__body">
+            <p class="work-card__description">
+              AIタロット占いアプリTwilightのWebサイトを作りました。
+            </p>
+
+            <span class="work-card__category">
+              WEB DESIGN
+            </span>
+          </div>
+
+        </a>
+      </article>
+
+
+      <article class="work-card">
+        <a href="#" class="work-card__link">
+
+          <div class="work-card__image">
+            <img src="/img-web-astrowrite-raund.png" alt="ASTROWRITE">
+          </div>
+
+          <div class="work-card__body">
+            <p class="work-card__description">
+              12星座占いライティング・エージェントAstrowriteのWebサイトを作りました。
+            </p>
+
+            <span class="work-card__category">
+              WEB DESIGN
+            </span>
+          </div>
+
+        </a>
+      </article>
+
+
+      <article class="work-card">
+        <a href="#" class="work-card__link">
+
+          <div class="work-card__image">
+            <img src="/img-web-astrowrite-raund.png" alt="KOAKUTSUNATUMI PORTFOLIO">
+          </div>
+
+          <div class="work-card__body">
+            <p class="work-card__description">
+              自身のポートフォリオサイトを作成しました。
+            </p>
+
+            <span class="work-card__category">
+              WEB DESIGN
+            </span>
+          </div>
+
+        </a>
+      </article>
+
+    </div>
+
+    </div>
+
+    </section>
+
+      <!-- include -->
+  <div id="footer"></div>
+
+  <!-- ========================================
+    MOBILE MENU
+========================================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+  <nav class="mobile-menu__nav">
+    <a href="/index.html">TOP</a>
+    <a href="/web.html">WEB</a>
+    <a href="/logo.html">LOGO</a>
+    <a href="/banner.html">BANNER</a>
+    <a href="/movie.html">MOVIE</a>
+    <a href="/about.html">ABOUT</a>
+    <a href="/contact.html">CONTACT</a>
+  </nav>
+
+  <div class="mobile-menu__brand">
+
+    <img
+      src="/vector_logo.svg"
+      alt=""
+      class="mobile-menu__logo"
+    >
+
+    <div class="mobile-menu__name">
+      <p>
+        KOAKUTSU<br>
+        NATSUMI
+      </p>
+
+      <span>Designer</span>
+    </div>
+
+  </div>
+
+</div>
+
+  <!-- ハンバーガーボタン -->
+<button class="mobile-menu-button" type="button">
+  <span class="mobile-menu-button__text">menu</span>
+</button>
+
+<div class="custom-cursor"></div>
+
+  <script type="module" src="/src/main.ts"></script><!--typescriptを読み込むために必要-->
+</body>
+
+</html>
