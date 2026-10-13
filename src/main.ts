@@ -250,6 +250,8 @@ const popupClose =
   POPUP OPEN
 ======================================== */
 
+let popupLoadId = 0
+
 popupTriggers.forEach((trigger) => {
 
   trigger.addEventListener('click', () => {
@@ -258,14 +260,25 @@ popupTriggers.forEach((trigger) => {
 
     if (!page || !popup || !popupIframe) return
 
-    popupIframe.src = page
-
-    popup.classList.add('is-open')
+    const loadId = ++popupLoadId
 
     // 親ページのカーソルを非表示
     cursor?.classList.add('is-hidden')
 
+    // 親ページのスクロールを停止
     document.body.style.overflow = 'hidden'
+
+    // iframeの読み込み完了を待つ
+    popupIframe.onload = () => {
+
+      if (loadId !== popupLoadId) return
+
+      popup.classList.add('is-open')
+
+    }
+
+    // 下層ページを読み込む
+    popupIframe.src = page
 
   })
 
