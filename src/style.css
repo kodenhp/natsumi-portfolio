@@ -2046,6 +2046,13 @@ html.lenis body {
   .works-grid{
     grid-template-columns:repeat(1, minmax(0, 1fr))
   }
+  .page-popup__close-dot{
+    display: none;
+  }
+  .page-popup__close-text{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 @media (max-width:  548px) {
 .works-section__inner__wrapper{
@@ -2056,15 +2063,24 @@ html.lenis body {
   padding:54px 16px;
 }
 .works-section__title{
-  font-size: 48px;
-  margin-bottom: 1rem;
+  font-size: 32px;
+  margin-bottom: .5rem;
 }
 .works-section__line{
   margin-top:.5rem;
 }
-.work-card__image__web img{
-  margin:20px auto;
+.work-card__image__web img,
+.work-card__image__web img
+{
+  margin:1rem auto;
 }
+
+.work-card__image__logo img,
+.work-card__image__logo img
+{
+  width: 100%;
+}
+
 #web .work-card__description,
 #web .work-card__category{
   margin-left:0;
@@ -2099,8 +2115,13 @@ html.lenis body {
 
   .work_desc{
     width: 100%;
+    margin:1rem auto 6rem;
   }
 
+  .work-card__image__flex{
+    display: block;
+    width: 100%;
+  }
   .iframe-wrapper{
     border-radius: 8px;
   }
@@ -2164,5 +2185,16 @@ html.lenis body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+
+/* ========================================
+  MOBILE FONT TEST
+======================================== */
+
+@media (max-width: 767px) {
+  body {
+    font-family: "Noto Sans JP", sans-serif;
   }
 }
