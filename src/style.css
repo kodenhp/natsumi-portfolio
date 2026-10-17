@@ -516,7 +516,7 @@ body,
 .works-section__title {
   flex-shrink: 0;
   font-family:var(--ff-cormorant);
-  font-size: 52px;
+  font-size: 72px;
   letter-spacing: .05rem;
   font-weight: 400;
   line-height: .9;
@@ -922,9 +922,7 @@ body,
 }
 .photo-gallery__title {
   flex-shrink: 0;
-  font-family:
-    "Times New Roman",
-    serif;
+  font-family: var(--ff-cormorant);
   font-size: 14px;
   letter-spacing: 0.15em;
 }
@@ -2066,6 +2064,10 @@ html.lenis body {
   font-size: 32px;
   margin-bottom: .5rem;
 }
+
+.works-section__title_top{
+  font-size: 64px;
+}
 .works-section__line{
   margin-top:.5rem;
 }
@@ -2098,7 +2100,7 @@ html.lenis body {
   row-gap:24px;
 }
 .work-card__body{
-  margin-top:0px;
+  margin:0 0 2rem 0;
 }
 .work-card__image--aspect{
   aspect-ratio: 0
@@ -2131,6 +2133,10 @@ html.lenis body {
   }
 
   .movie-showcase .movie-showcase__item:last-child{
+    display: none;
+  }
+
+  .work-card-movie-second{
     display: none;
   }
 }
@@ -2197,4 +2203,25 @@ html.lenis body {
   body {
     font-family: "Noto Sans JP", sans-serif;
   }
+}
+
+/* ========================================
+  CONTACT STATUS
+======================================== */
+
+.contact-form__status {
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.8;
+  text-align: center;
+  color: var(--bg-color);
+}
+
+.contact-form__status:empty {
+  display: none;
+}
+
+.contact-form__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

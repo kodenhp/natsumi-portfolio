@@ -117,7 +117,7 @@
         <section class="works-section" id="web">
           <div class="works-section__inner">
             <div class="works-section__heading">
-              <h2 class="works-section__title">WEB</h2>
+              <h2 class="works-section__title works-section__title_top">WEB</h2>
               <span class="works-section__line"></span>
             </div>
             <div class="works-grid">
@@ -188,7 +188,7 @@
         <section class="works-category" id="logo">
           <div class="works-section__inner">
             <div class="works-section__heading">
-              <h2 class="works-section__title">LOGO</h2>
+              <h2 class="works-section__title works-section__title_top">LOGO</h2>
               <span class="works-section__line"></span>
             </div>
             <div class="works-grid works-grid--logo">
@@ -271,7 +271,7 @@
           <section class="works-category" id="banner">
             <div class="works-section__inner">
               <div class="works-section__heading">
-                <h2 class="works-section__title">BANNER</h2>
+                <h2 class="works-section__title works-section__title_top">BANNER</h2>
                 <span class="works-section__line"></span>
               </div>
               <div class="works-grid works-grid--banner">
@@ -426,7 +426,7 @@
         <section class="works-category" id="movie">
           <div class="works-section__inner">
             <div class="works-section__heading">
-              <h2 class="works-section__title">MOVIE</h2>
+              <h2 class="works-section__title works-section__title_top">MOVIE</h2>
               <span class="works-section__line"></span>
             </div>
             <div class="movie-grid">
@@ -448,8 +448,8 @@
 
 
               <!-- astrowrite right -->
-              <article class="work-card">
-                <div class="work-card__image work-card__image--movie js-page-popup work-card__link" data-page="lower/banner_07.html">
+              <article class="work-card work-card-movie-second">
+                <div class="work-card__image work-card__image--movie js-page-popup work-card__link" data-page="lower/movie_astrowrite.html">
                   <video src="/movie_astrowrite_02.mp4" autoplay muted loop playsinline></video>
                 </div>
               </article>
@@ -556,29 +556,30 @@
             <img src="/contact.svg" alt="CONTACT" class="contact-section__title">
           </div>
           <!-- Contact Form -->
-          <form class="contact-form">
+          <form class="contact-form" id="contactForm">
             <div class="contact-form__group">
               <label for="name" class="contact-form__label">
                 お名前または会社名
-                <span><p>\*</p></span>
+                <span><p>*</p></span>
               </label>
               <input type="text" id="name" name="name" class="contact-form__input" required>
             </div>
             <div class="contact-form__group">
               <label for="email" class="contact-form__label">
                 メールアドレス
-                <span><p>\*</p></span>
+                <span><p>*</p></span>
               </label>
               <input type="email" id="email" name="email" class="contact-form__input" placeholder="メールアドレスを入力" required>
             </div>
             <div class="contact-form__group">
               <label for="message" class="contact-form__label">
                 お問い合わせ内容
-                <span><p>\*</p></span>
+                <span><p>*</p></span>
               </label>
               <textarea id="message" name="message" class="contact-form__textarea" placeholder="例）新規店舗立ち上げに伴い、自社のロゴを作りたい" required></textarea>
             </div>
             <button type="submit" class="contact-form__button">送信する</button>
+            <p class="contact-form__status" id="contactStatus" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>

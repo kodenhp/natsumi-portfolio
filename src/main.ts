@@ -1,3 +1,5 @@
+import emailjs from '@emailjs/browser'
+
 /* ========================================
   HERO SLIDER
 ======================================== */
@@ -467,7 +469,7 @@ document.querySelectorAll<HTMLElement>('.movie-grid__popup .work-card__image--mo
 import Lenis from 'lenis'
 
 const lenis = new Lenis({
-  duration: 1.4,
+  duration: .5,
   smoothWheel: true,
   wheelMultiplier: 1,
   touchMultiplier: 1,
@@ -480,3 +482,68 @@ function raf(time: number) {
 }
 
 requestAnimationFrame(raf)
+
+
+
+
+/* ========================================
+  CONTACT FORM
+======================================== */
+
+const contactForm =
+  document.querySelector<HTMLFormElement>('#contactForm')
+
+const contactStatus =
+  document.querySelector<HTMLElement>('#contactStatus')
+
+const SERVICE_ID = 'service_g00ewug'
+const TEMPLATE_ID = 'template_wbs7xhg'
+const PUBLIC_KEY = 'U-pTMf17ftYQLFBTE'
+
+if (contactForm && contactStatus) {
+
+  const submitButton =
+    contactForm.querySelector<HTMLButtonElement>(
+      'button[type="submit"]'
+    )
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault()
+
+    if (!contactForm.reportValidity()) return
+    if (submitButton?.disabled) return
+
+    if (submitButton) {
+      submitButton.disabled = true
+      submitButton.textContent = '送信中...'
+    }
+
+    contactStatus.textContent = ''
+
+    try {
+      await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        contactForm,
+        { publicKey: PUBLIC_KEY }
+      )
+
+      contactStatus.textContent =
+        'お問い合わせを送信しました。ありがとうございます。'
+
+      contactForm.reset()
+
+    } catch (error) {
+      console.error('EmailJS送信エラー:', error)
+
+      contactStatus.textContent =
+        '送信に失敗しました。時間をおいて再度お試しください。'
+
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false
+        submitButton.textContent = '送信する'
+      }
+    }
+  })
+}
